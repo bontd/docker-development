@@ -1,6 +1,6 @@
 FROM php:7.4-fpm
 
-# Cài các gói cần thiết cho PHP và build
+# Cài các gói cần thiết
 RUN apt-get update && apt-get install -y \
     libzip-dev \
     libpng-dev \
@@ -18,10 +18,9 @@ RUN apt-get update && apt-get install -y \
     zip \
     git \
     curl \
-    gnupg \
     pkg-config \
-    software-properties-common \
-    build-essential \
+    gnupg \
+    apt-transport-https \
     && docker-php-ext-configure gd \
         --with-freetype \
         --with-jpeg \
@@ -41,13 +40,15 @@ RUN apt-get update && apt-get install -y \
 RUN curl -sS https://getcomposer.org/installer | php && \
     mv composer.phar /usr/local/bin/composer
 
-# Cài Node.js & npm (phiên bản 18 LTS)
+# Cài Node.js 18 và npm đi kèm (đã ổn định)
 RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \
-    apt-get install -y nodejs && \
-    npm install -g npm@latest
+    apt-get install -y nodejs
 
-# Dọn dẹp cache để giảm kích thước image
-RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+# (Tùy chọn) Hạ npm nếu cần, nhưng Node 18 mặc định đã kèm npm 10.x
+# RUN npm install -g npm@9
 
 # Thiết lập thư mục làm việc
 WORKDIR /var/www
+
+# Thêm node_modules vào PATH nếu muốn gọi npm từ các script khác
+ENV PATH="/var/www/node_modules/.bin:$PATH"
