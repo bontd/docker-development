@@ -41,7 +41,7 @@ services:
       - ${MYSQL_DB_PORT:-3306}:3306
     volumes:
       - mysql-data:/var/lib/mysql
-      - ./composer/sql/jiian_240508.sql:/docker-entrypoint-initdb.d/jiian_240508.sql
+      - ./sql/jiian_240508.sql:/docker-entrypoint-initdb.d/jiian_240508.sql
     environment:
       - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD:-root}
     command:
@@ -60,13 +60,6 @@ services:
     environment:
       - POSTGRES_USER=${POSTGRES_USER:-root}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-root}
-
-  adminer:
-    container_name: adminer
-    image: adminer
-    restart: always
-    ports:
-      - 8888:8080
 
 volumes:
   mysql-data:
