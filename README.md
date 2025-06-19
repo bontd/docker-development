@@ -84,3 +84,5 @@ Released under the [MIT License](LICENSE).
 [link-license]: https://opensource.org/license/mit
 
 docker restart nginx
+
+docker-compose exec php-fpm bash
