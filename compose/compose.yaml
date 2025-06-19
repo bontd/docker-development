@@ -10,7 +10,8 @@ services:
       - ./docker/nginx/sites-enabled:/etc/nginx/conf.d
       - ./src:/var/www:cached
       - sock-data:/sock
-      - ssl-data:/etc/nginx/certs
+      - ssl-data:/etc/nginx/certs    # SSL mount custom
+      - certbot-data:/etc/letsencrypt 
     depends_on:
       - php-fpm
       - mysql
@@ -66,3 +67,4 @@ volumes:
   postgres-data:
   sock-data:
   ssl-data:
+  certbot-data:
