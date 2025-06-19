@@ -7,7 +7,7 @@ pull request review much smoother. In your issue, pull request, and any other
 communications, please remember to treat your fellow contributors with
 respect! We take our [code of conduct](CODE_OF_CONDUCT.md) seriously.
 
-Note that you'll need to sign [Focela's Contributor License Agreement][cla]
+Note that you'll need to sign [xavia's Contributor License Agreement][cla]
 before we can accept any of your contributions. If necessary, a bot will remind
 you to accept the CLA when you open your pull request.
 
@@ -18,7 +18,7 @@ you to accept the CLA when you open your pull request.
 ```bash
 git clone git@github.com:your_github_username/flash-development.git
 cd flash-development
-git remote add upstream https://github.com/focela/flash-development.git
+git remote add upstream https://github.com/xavia/flash-development.git
 git fetch upstream
 ```
 
@@ -53,10 +53,10 @@ We're much more likely to approve your changes if you:
 - Write a [good commit message][commit-message].
 - Maintain backward compatibility.
 
-[fork]: https://github.com/focela/flash-development/fork
+[fork]: https://github.com/xavia/flash-development/fork
 
-[open-issue]: https://github.com/focela/flash-development/issues/new
+[open-issue]: https://github.com/xavia/flash-development/issues/new
 
-[cla]: https://cla-assistant.io/focela/flash-development
+[cla]: https://cla-assistant.io/xavia/flash-development
 
 [commit-message]: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html

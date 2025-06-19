@@ -1,5 +1,5 @@
 FROM nginx:1.25-alpine
-LABEL maintainer="The Focela Authors <opensource@focela.com>"
+LABEL maintainer="The xavia Authors <opensource@xavia.com>"
 
 ARG APP_ID=1000
 

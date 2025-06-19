@@ -1,5 +1,5 @@
 FROM php:8.3-fpm-bookworm
-LABEL maintainer="Focela Technologies <opensource@focela.com>"
+LABEL maintainer="xavia Technologies <opensource@xavia.com>"
 
 ARG APP_ID=1000
 RUN groupadd -g "$APP_ID" app \

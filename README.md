@@ -15,9 +15,9 @@ Docker's environment development for PHP (Laravel, Wordpress, Magento...)
 
 View Dockerfiles for the latest tags:
 
-- [focela/nginx (Docker Hub)](https://hub.docker.com/r/focela/nginx/)
+- [xavia/nginx (Docker Hub)](https://hub.docker.com/r/xavia/nginx/)
     - [`1.18`](images/nginx/1.25)
-- [focela/php (Docker Hub)](https://hub.docker.com/r/focela/php/)
+- [xavia/php (Docker Hub)](https://hub.docker.com/r/xavia/php/)
     - [`8.1-fpm`](images/php/8.1)
     - [`8.2-fpm`](images/php/8.2)
     - [`8.3-fpm`](images/php/8.3)
@@ -59,7 +59,7 @@ We encourage and support an active, healthy community of contributors &mdash;
 including you! Details are in the [contribution guide](CONTRIBUTING.md) and
 the [code of conduct](CODE_OF_CONDUCT.md). The flash-development maintainers keep an eye on
 issues and pull requests, but you can also report any negative conduct to
-opensource@focela.com. That email list is a private, safe space; even the flash-development
+opensource@xavia.com. That email list is a private, safe space; even the flash-development
 maintainers don't have access, so don't hesitate to hold us to a high
 standard.
 
@@ -71,14 +71,16 @@ Released under the [MIT License](LICENSE).
 
 [version]: https://www.php.net/releases/8.0/en.php
 
-[icon-php-downloads]: https://img.shields.io/docker/pulls/focela/php.svg?label=PHP%20pulls
+[icon-php-downloads]: https://img.shields.io/docker/pulls/xavia/php.svg?label=PHP%20pulls
 
-[icon-nginx-downloads]: https://img.shields.io/docker/pulls/focela/nginx.svg?label=Nginx%20pulls
+[icon-nginx-downloads]: https://img.shields.io/docker/pulls/xavia/nginx.svg?label=Nginx%20pulls
 
 [icon-license]: https://img.shields.io/badge/license-MIT-blue.svg
 
-[link-php-dockerhub]: https://hub.docker.com/r/focela/php/
+[link-php-dockerhub]: https://hub.docker.com/r/xavia/php/
 
-[link-nginx-dockerhub]: https://hub.docker.com/r/focela/nginx/
+[link-nginx-dockerhub]: https://hub.docker.com/r/xavia/nginx/
 
 [link-license]: https://opensource.org/license/mit
+
+docker restart nginx
