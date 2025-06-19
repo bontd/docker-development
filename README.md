@@ -88,3 +88,7 @@ docker restart nginx
 docker-compose exec php-fpm bash
 
 docker exec -it php-fpm bash
+
+
+
+docker exec -i mysql bash -c "mysql -u root -proot jiiandb < /jiian_240508.sql"
